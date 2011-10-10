@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A7859D21443BDBB00C7C824 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7859D11443BDBB00C7C824 /* QuickLook.framework */; };
+		5A7859D41443BDBB00C7C824 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7859D31443BDBB00C7C824 /* ApplicationServices.framework */; };
+		5A7859D61443BDBB00C7C824 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7859D51443BDBB00C7C824 /* CoreServices.framework */; };
+		5A7859D81443BDBB00C7C824 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7859D71443BDBB00C7C824 /* CoreFoundation.framework */; };
+		5A7859DE1443BDBB00C7C824 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A7859DC1443BDBB00C7C824 /* InfoPlist.strings */; };
+		5A7859E11443BDBB00C7C824 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A7859E01443BDBB00C7C824 /* GenerateThumbnailForURL.c */; };
+		5A7859E31443BDBB00C7C824 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A7859E21443BDBB00C7C824 /* GeneratePreviewForURL.c */; };
+		5A7859E51443BDBB00C7C824 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A7859E41443BDBB00C7C824 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A7859CE1443BDBB00C7C824 /* MultiMarkdown QuickLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MultiMarkdown QuickLook.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7859D11443BDBB00C7C824 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		5A7859D31443BDBB00C7C824 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		5A7859D51443BDBB00C7C824 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		5A7859D71443BDBB00C7C824 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5A7859DB1443BDBB00C7C824 /* MultiMarkdown QuickLook-Info.plist */ = {isa = PBXFileReference; path = "MultiMarkdown QuickLook-Info.plist"; sourceTree = "<group>"; };
+		5A7859DD1443BDBB00C7C824 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A7859DF1443BDBB00C7C824 /* MultiMarkdown QuickLook-Prefix.pch */ = {isa = PBXFileReference; path = "MultiMarkdown QuickLook-Prefix.pch"; sourceTree = "<group>"; };
+		5A7859E01443BDBB00C7C824 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		5A7859E21443BDBB00C7C824 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		5A7859E41443BDBB00C7C824 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A7859C91443BDBB00C7C824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A7859D21443BDBB00C7C824 /* QuickLook.framework in Frameworks */,
+				5A7859D41443BDBB00C7C824 /* ApplicationServices.framework in Frameworks */,
+				5A7859D61443BDBB00C7C824 /* CoreServices.framework in Frameworks */,
+				5A7859D81443BDBB00C7C824 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A7859C11443BDBB00C7C824 = {
+			isa = PBXGroup;
+			children = (
+				5A7859D91443BDBB00C7C824 /* MultiMarkdown QuickLook */,
+				5A7859D01443BDBB00C7C824 /* Frameworks */,
+				5A7859CF1443BDBB00C7C824 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A7859CF1443BDBB00C7C824 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A7859CE1443BDBB00C7C824 /* MultiMarkdown QuickLook.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A7859D01443BDBB00C7C824 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A7859D11443BDBB00C7C824 /* QuickLook.framework */,
+				5A7859D31443BDBB00C7C824 /* ApplicationServices.framework */,
+				5A7859D51443BDBB00C7C824 /* CoreServices.framework */,
+				5A7859D71443BDBB00C7C824 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A7859D91443BDBB00C7C824 /* MultiMarkdown QuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				5A7859E01443BDBB00C7C824 /* GenerateThumbnailForURL.c */,
+				5A7859E21443BDBB00C7C824 /* GeneratePreviewForURL.c */,
+				5A7859E41443BDBB00C7C824 /* main.c */,
+				5A7859DA1443BDBB00C7C824 /* Supporting Files */,
+			);
+			path = "MultiMarkdown QuickLook";
+			sourceTree = "<group>";
+		};
+		5A7859DA1443BDBB00C7C824 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A7859DB1443BDBB00C7C824 /* MultiMarkdown QuickLook-Info.plist */,
+				5A7859DC1443BDBB00C7C824 /* InfoPlist.strings */,
+				5A7859DF1443BDBB00C7C824 /* MultiMarkdown QuickLook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A7859CA1443BDBB00C7C824 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A7859CD1443BDBB00C7C824 /* MultiMarkdown QuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A7859E81443BDBB00C7C824 /* Build configuration list for PBXNativeTarget "MultiMarkdown QuickLook" */;
+			buildPhases = (
+				5A7859C81443BDBB00C7C824 /* Sources */,
+				5A7859C91443BDBB00C7C824 /* Frameworks */,
+				5A7859CA1443BDBB00C7C824 /* Headers */,
+				5A7859CB1443BDBB00C7C824 /* Resources */,
+				5A7859CC1443BDBB00C7C824 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiMarkdown QuickLook";
+			productName = "MultiMarkdown QuickLook";
+			productReference = 5A7859CE1443BDBB00C7C824 /* MultiMarkdown QuickLook.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A7859C31443BDBB00C7C824 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5A7859C61443BDBB00C7C824 /* Build configuration list for PBXProject "MultiMarkdown QuickLook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A7859C11443BDBB00C7C824;
+			productRefGroup = 5A7859CF1443BDBB00C7C824 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A7859CD1443BDBB00C7C824 /* MultiMarkdown QuickLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A7859CB1443BDBB00C7C824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A7859DE1443BDBB00C7C824 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		5A7859CC1443BDBB00C7C824 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A7859C81443BDBB00C7C824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A7859E11443BDBB00C7C824 /* GenerateThumbnailForURL.c in Sources */,
+				5A7859E31443BDBB00C7C824 /* GeneratePreviewForURL.c in Sources */,
+				5A7859E51443BDBB00C7C824 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A7859DC1443BDBB00C7C824 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A7859DD1443BDBB00C7C824 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A7859E61443BDBB00C7C824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5A7859E71443BDBB00C7C824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5A7859E91443BDBB00C7C824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiMarkdown QuickLook/MultiMarkdown QuickLook-Prefix.pch";
+				INFOPLIST_FILE = "MultiMarkdown QuickLook/MultiMarkdown QuickLook-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		5A7859EA1443BDBB00C7C824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiMarkdown QuickLook/MultiMarkdown QuickLook-Prefix.pch";
+				INFOPLIST_FILE = "MultiMarkdown QuickLook/MultiMarkdown QuickLook-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A7859C61443BDBB00C7C824 /* Build configuration list for PBXProject "MultiMarkdown QuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A7859E61443BDBB00C7C824 /* Debug */,
+				5A7859E71443BDBB00C7C824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A7859E81443BDBB00C7C824 /* Build configuration list for PBXNativeTarget "MultiMarkdown QuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A7859E91443BDBB00C7C824 /* Debug */,
+				5A7859EA1443BDBB00C7C824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A7859C31443BDBB00C7C824 /* Project object */;
+}
