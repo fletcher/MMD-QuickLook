@@ -10,8 +10,19 @@
 			<key>CFBundleTypeRole</key>
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>QLGenerator</string>
+			<key>LSItemContentTypes</key>
 			<array>
-				<string>SUPPORTED_UTI_TYPE</string>
+				<string>net.daringfireball.markdown</string>
+				<string>com.multimarkdown.text</string>
+				<string>org.vim.markdown-file</string>
+				<string>public.opml</string>
+				<string>com.multimarkdown.opml</string>
+				<string>org.opml.opml</string>
 			</array>
 		</dict>
 	</array>
@@ -20,7 +31,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>net.fletcherpenney.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>net.fletcherpenney.quicklook</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -45,10 +56,29 @@
 			<string>12B11958-4455-4E27-9FAA-A8E5F7E22211</string>
 		</array>
 	</dict>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>org.opml.opml</string>
+			</array>
+			<key>UTTypeIdentifier</key>
+			<string>public.opml</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<dict>
+					<key>item 0</key>
+					<string>opml</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2011 __MyCompanyName__. All rights reserved.</string>
+	<string>Copyright © 2011 Fletcher T. Penney. All rights reserved.</string>
 	<key>QLNeedsToBeRunInMainThread</key>
 	<false/>
 	<key>QLPreviewHeight</key>
