@@ -18,10 +18,10 @@
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>net.daringfireball.markdown</string>
-				<string>com.multimarkdown.text</string>
+				<string>net.multimarkdown.text</string>
 				<string>org.vim.markdown-file</string>
 				<string>public.opml</string>
-				<string>com.multimarkdown.opml</string>
+				<string>net.multimarkdown.opml</string>
 				<string>org.opml.opml</string>
 			</array>
 		</dict>
@@ -56,6 +56,20 @@
 			<string>12B11958-4455-4E27-9FAA-A8E5F7E22211</string>
 		</array>
 	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2011 Fletcher T. Penney. All rights reserved.</string>
+	<key>QLNeedsToBeRunInMainThread</key>
+	<false/>
+	<key>QLPreviewHeight</key>
+	<real>600</real>
+	<key>QLPreviewWidth</key>
+	<real>800</real>
+	<key>QLSupportsConcurrentRequests</key>
+	<false/>
+	<key>QLThumbnailMinimumSize</key>
+	<real>17</real>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -75,19 +89,5 @@
 			</dict>
 		</dict>
 	</array>
-	<key>CFPlugInUnloadFunction</key>
-	<string></string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2011 Fletcher T. Penney. All rights reserved.</string>
-	<key>QLNeedsToBeRunInMainThread</key>
-	<false/>
-	<key>QLPreviewHeight</key>
-	<real>600</real>
-	<key>QLPreviewWidth</key>
-	<real>800</real>
-	<key>QLSupportsConcurrentRequests</key>
-	<false/>
-	<key>QLThumbnailMinimumSize</key>
-	<real>17</real>
 </dict>
 </plist>

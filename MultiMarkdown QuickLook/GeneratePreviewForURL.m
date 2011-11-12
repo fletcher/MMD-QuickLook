@@ -12,7 +12,7 @@
 NSData* processMMD(NSURL* url);
 NSData* processOPML2MMD(NSURL* url);
 
-BOOL logDebug = YES;
+BOOL logDebug = NO;
 
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
@@ -112,7 +112,18 @@ NSData* processMMD(NSURL* url)
 	
 	[task launch];
     
-    NSString *theData = [NSString stringWithContentsOfFile:[url path] encoding:NSUTF8StringEncoding error:nil];
+    NSStringEncoding encoding = 0;
+        
+    // Ensure we used proper encoding - try different options until we get a hit
+  //  if (plainText == nil)
+    //    plainText = [NSString stringWithContentsOfFile:[url path] usedEncoding:<#(NSStringEncoding *)#> error:<#(NSError **)#> encoding:NSASCIIStringEncoding];
+    
+
+    
+    NSString *theData = [NSString stringWithContentsOfFile:[url path] usedEncoding:&encoding error:nil];
+    
+    if (logDebug)
+        NSLog(@"Used %lu encoding",(unsigned long) encoding);
     
 	[writeHandle writeData:[theData dataUsingEncoding:NSUTF8StringEncoding]];
     

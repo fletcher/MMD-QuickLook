@@ -150,6 +150,9 @@
 /* Begin PBXProject section */
 		5A7859C31443BDBB00C7C824 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 5A7859C61443BDBB00C7C824 /* Build configuration list for PBXProject "MultiMarkdown QuickLook" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
