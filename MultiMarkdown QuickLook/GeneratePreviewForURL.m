@@ -122,6 +122,14 @@ NSData* processMMD(NSURL* url)
     
     NSString *theData = [NSString stringWithContentsOfFile:[url path] usedEncoding:&encoding error:nil];
     
+	// Force generation of fully-formed (X)HTML document. MMD will add 
+	// a head element with a character encoding declaration
+	NSString *existingMetadata = [theData substringToIndex:[theData rangeOfString:@"\n"].location];
+	if ([existingMetadata rangeOfString:@":"].length == 0) {
+		NSString *formatComplete = @"format:complete\n\n";
+		theData = [formatComplete stringByAppendingString:theData];
+	}
+
     if (logDebug)
         NSLog(@"Used %lu encoding",(unsigned long) encoding);
     
