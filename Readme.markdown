@@ -24,7 +24,6 @@ Downloads
 
 Source code is available at <http://github.com/fletcher/MMD-QuickLook>.
 
-You can download a binary release from <https://github.com/fletcher/MMD-QuickLook/downloads>.
 
 
 License
@@ -35,7 +34,6 @@ The QLMarkdown code is distributed under the same terms as [peg-multimarkdown].
 Known Issues
 ------------
 
-Images are not displayed in previews.
 
 
 Version History
